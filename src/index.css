@@ -1,0 +1,22 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* @apply box-border bg-gray-400 text-gray-100 h-screen mx-2 md:mx-12 lg:mx-32 py-4; */
+  @apply box-border font-Raleway bg-[#6F7DFB] text-white  h-screen mx-4 py-4;
+}
+@layer base {
+  input {
+    @apply text-black box-border border-none outline-none w-64 px-2 py-1 rounded-md;
+  }
+}
+
+.btn-primary {
+  @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+} /* @layer components {
+  .nav-links {
+    @apply hover:cursor-pointer hover:text-sky-300 duration-300;
+  }
+} */
